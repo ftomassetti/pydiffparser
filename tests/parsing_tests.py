@@ -18,4 +18,4 @@ def test_basic():
 def test_changed_lines():
 	p = Parser()
 	diff = p.parse("tests/data/ex2.diff")
-	eq_(diff.new("03trail_fname.to").lines_changed, [4, 5])
+	eq_(diff.new_lines("03trail_fname.to"), [4, 5])

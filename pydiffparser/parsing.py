@@ -26,6 +26,9 @@ class Parser:
                     return c
             raise Exception("File not changes %s" % filename)
 
+        def new_lines(self, filename):
+            return self.new(filename).lines_changed
+
     # Represent a single section, i.e. a comparison between two files
     # (or two versions of the same file)
     class Section:
