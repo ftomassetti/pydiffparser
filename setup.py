@@ -12,7 +12,12 @@ config = {
     'install_requires': ['nose'],
     'packages': ['pydiffparser'],
     'scripts': [],
-    'name': 'pydiffparser'
+    'name': 'pydiffparser',
+    'classifiers': [
+        'Programming Language :: Python',
+        'License :: OSI Approved :: MIT License',
+        'Operating System :: OS Independent',
+        'Development Status :: 3 - Alpha']
 }
 
 setup(**config)
